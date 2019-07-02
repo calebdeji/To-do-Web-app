@@ -1,0 +1,144 @@
+body {
+    box-sizing: border-box;
+    padding-top: 2%;
+}
+
+footer,
+main div.header {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+main div.container-item {
+    background-color: rgb(15, 29, 0);
+}
+
+main div.container-item,
+main div.container-item-list {
+
+    width: 70%;
+    margin: auto;
+    padding: 2em;
+}
+
+main div.container-item-list {
+    background-color: rgb(255, 81, 0);
+}
+
+main div.container-item-list span.span {
+    display: inline-block;
+    width: 70%;
+}
+
+main div.container-item-list label {
+    color: black;
+}
+
+main div.container-item-list p {
+    background-color: rgb(109, 43, 12);
+    padding: 1em;
+    color: white;
+}
+
+main div.container-item-list p label {
+    color: white;
+}
+
+main div.container-item h5 {
+    color: white;
+}
+
+.input-field input[type=text]::placeholder {
+    color: rgb(150, 148, 148);
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(255, 81, 0) !important;
+    box-shadow: 0 1px 0 0 rgb(255, 81, 0) !important;
+    color: white !important;
+}
+
+input[type='button'],
+input[type='button']:active,
+input[type='button']:focus,
+input[type='button']:target,
+span.delete button:hover {
+    background-color: rgb(109, 43, 12);
+}
+
+input[type='submit'],
+input[type='submit']:active,
+input[type='submit']:focus,
+input[type='submit']:target,
+span.delete submit:hover {
+    background-color: rgb(109, 43, 12);
+}
+
+input[type='button']:hover,
+input[type='submit']:hover,
+span.delete button {
+    background-color: rgb(255, 81, 0);
+}
+
+.checkbox-orange[type="checkbox"]+label:before {
+    border: 2px solid rgb(255, 81, 0);
+    background: transparent;
+    border-color: rgb(255, 81, 0);
+}
+
+.checkbox-orange[type="checkbox"]:checked+label:before {
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgb(255, 81, 0);
+    border-right: 2px solid rgb(255, 81, 0);
+    background: transparent;
+    border-color: rgb(255, 81, 0);
+}
+
+.checkbox-orange.filled-in[type="checkbox"]+label:after {
+    border: 2px solid rgb(255, 81, 0);
+    background: transparent;
+    border-color: rgb(255, 81, 0);
+}
+
+.checkbox-orange.filled-in[type="checkbox"]:checked+label:after {
+    background: rgb(255, 81, 0);
+    border-color: rgb(255, 81, 0);
+}
+
+.checkbox-orange.filled-in[type="checkbox"]:checked+label:before {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width:737px) {
+
+    main div.container-item,
+    main div.container-item-list {
+
+        width: 95%;
+        margin: auto;
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    main div.container-item,
+    main div.container-item-list {
+
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width:300px) {
+    input.custom {
+        display: block;
+        width: 50%;
+        margin-top: 1em;
+        clear: both;
+    }
+}
