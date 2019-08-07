@@ -1,6 +1,12 @@
 window.addEventListener("load", function () {
     //to load directly from the server rather than cache
     // document.location.reload(true);
+    /**
+     * to register service worker
+     */
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js");
+    }
     uiChange();
 });
 document.getElementById("button_save").addEventListener("click", function () {
