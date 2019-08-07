@@ -1,5 +1,5 @@
 const cacheName = "to-do-pwa";
-const cacheList = ['./', './index.html', './css/', './js/', './image/favi.png'];
+const cacheList = ['./', './index.html', '/css/index.css', './css/materialize.min.css', './js/index.js', './js/jquery-3.3.1.min.js', './js/materialize.min.js', './image/favi.png'];
 
 self.addEventListener("install", (event) => {
     event.waitUntil(caches.open(cacheName).then((cache) => {

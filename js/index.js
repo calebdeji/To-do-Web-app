@@ -4,8 +4,11 @@ window.addEventListener("load", function () {
     /**
      * to register service worker
      */
-    if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("./sw.js");
+    'use strict';
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+    } else {
+        this.console.log("Service worker not enabled");
     }
     uiChange();
 });
