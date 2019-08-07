@@ -14,13 +14,7 @@ document.getElementById("button_save").addEventListener("click", function () {
 });
 document.getElementById("button_clear").addEventListener("click", function () {
     clearAll();
-}); {
-    let url = window.location;
-    let urlLenght = url.length;
-    if (url[urlLenght - 1] == "#") {
-        window.location = "index.html";
-    }
-}
+});
 
 function addItem(text) {
     let textValue = text;
