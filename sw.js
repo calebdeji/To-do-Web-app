@@ -1,4 +1,11 @@
+/**
+ * Initializes the cache name
+ */
 const cacheName = "to-do-pwa";
+
+/**
+ * files to be cached for the native web app
+ */
 const cacheList = ['./', './index.html', '/css/index.css', './css/materialize.min.css', './js/index.js', './js/jquery-3.3.1.min.js', './js/materialize.min.js', './image/favi.png'];
 
 self.addEventListener("install", (event) => {
