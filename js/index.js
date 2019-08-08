@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js');
     } else {
-        this.console.log("Service worker not enabled");
+        console.log("Service worker not enabled");
     }
     uiChange();
 });
